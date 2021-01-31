@@ -65,13 +65,13 @@ import json
 import requests
 import os
 
-access_token = "Bearer ya29.a0AfH6SMDw0lQY3dwukUcVpbYOOu_yJ6Vjaluoo-VbOZhSzSQSaRmdyGNE79MS6XCGsggOY_ojH45gUWvIk28fncdu_lfuhNDF3vYpAEN9g1JoLUaHtfAtm_jvnN24beAmvKc6mjUGV2gHsbDpTuP6kqP2i62T2Bzn-GRDhE2Hv8E"
+access_token = "Bearer <token>"
 
 path = os.getcwd()
 headers = {"Authorization": access_token}
 para = {
     "name": "minuti.csv",
-    "parents": ["1lFDf3TkDPRo-PRO08vwjuhQeMxYHEPWk"]
+    "parents": ["<folder_name>"]
 }
 files = {
     'data': ('metadata', json.dumps(para), 'application/json; charset=UTF-8'),
